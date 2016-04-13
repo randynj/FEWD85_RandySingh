@@ -1,0 +1,76 @@
+body {
+  background-color: #232323;
+  outline: 3px solid #cccccc;
+  padding: 10px;
+
+}
+
+h1 {
+	
+	color: white;
+	text-align: center;
+	font-family: 'Merienda One', Helvetica, sans-serif;
+
+}
+
+h3 {
+	color: white;
+}
+
+h4 {
+	color: #e6e6e6;
+}
+h5 {
+	color: green;
+	
+}
+
+
+td {
+	
+	align: center;
+}
+
+section {
+	color: white;
+}
+
+img {
+	position: absolute;
+	top: 205px;
+	left: 1500px;
+	width: 150px;
+	height: 200px;
+	outline: 10px double white;
+}
+
+strong {
+		color: white;
+	}
+
+p {
+		color: #e6e6e6;
+	}
+
+em {
+		color: #b3b3b3;
+
+}
+
+li {
+	color: white;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr {
+	top: 15px;
+}
+
+a {
+	color: green;
+}
+	
