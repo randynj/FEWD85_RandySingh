@@ -36,7 +36,7 @@ section {
 }
 
 img {
-	position: absolute;
+	float: right;
 	top: 205px;
 	left: 1500px;
 	width: 150px;
