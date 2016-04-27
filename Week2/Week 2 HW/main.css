@@ -12,6 +12,7 @@
 .wrapper{
   width: 1080px;
   margin: 0 auto;
+  background-color: #000000;
 }
 
 /* this houses the first box height and all background color elements used*/
@@ -172,7 +173,7 @@ div{
   background: yellow;
   padding: 10px;
   margin: 0 auto;
-  /*applying a clear property to prevent the rest of the div from "hiding behind" the floated boxes
+  /*applying a  property to prevent the rest of the div from "hiding behind" the floated boxes
   above it*/
   clear: both;
 
