@@ -1,24 +1,19 @@
 {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+     -moz-box-sizing: border-box; /*Firexfox*/
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android*/
+     box-sizing: border-box; /*IE */
 }
 
-.wrapper{
+/*wrapping all elements on page*/
+.wrapper {
   width: 1080px;
-  
-  /*
-  height: 1300px;
-  */
   margin: 0 auto;
   background-color: #f0efef;
-  
   overflow: hidden;
-  
   clear: both;
-  
 }
 
+/*header color, picture and gradient*/
 header {
   background: #033048;
   padding: 15px 15px;
@@ -28,6 +23,7 @@ header {
   background-blend-mode: multiply;
 }
 
+/*Relaxr title in header*/
 h1 {
   color: white;
   font-size: 40px;
@@ -36,94 +32,103 @@ h1 {
   display: inline-block;
 }
 
+/*navigation housing anchor tags*/
 div.navigation {
   padding-left: 500px;
   display: inline-block;
   font-weight: 600;
 }
+
+/*anchor tags*/
 a {
   color: #f9e42e;
-
+  margin-right: 20px;
 }
 
-/*mouse over link*/
+/*anchor tags - mouse over link*/
 a:hover {
   color: #1AFF1A;
 }
 
-/*selected link*/
+/*anchor tags - selected link*/
 a:active {
   color: #FFFFFF;
 }
+
+/*image margin*/
 img {
-
   margin-left: 15px;
 }
 
-
-
-/*
-section {
-  width: 700px;
-  /*
-  height: 150px;
-  
-  margin-left: 15px;
-  float: left;
-  
-}
-*/
-
-
-
-
+/*Title/text over image*/
 h2 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
   color: #033048;
   margin-left: 15px;
   margin-right: 350px;
   margin-top: 35px;
-  
 }
 
-
+/*floating both posts left*/
 div.posts {
   float: left;
 
 }
 
+/*paragraph styling*/
+p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #CCCCCC;
+  margin-left: 15px;
+}
+
+/*styling applied to description text under images*/
+.show-description {
+  opacity: 1;
+  width: 700px;
+  color: #606161;
+}
+
+/*styling applied to the first letter of each description under each image*/
+p.show-description:first-letter {
+  color: #FF0066;
+  font-size: 45px;
+}
+
+/*"Read More" text below each image*/
+.read-more {
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
+  color: #033048;
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 370px;
+  padding-left: 575px;
+}
+
+/*horizontal line below "read more"*/
 hr {
   margin-left: 15px;
   margin-right: 360px;
 }
-/*
-section.image-one {
-  background-image:  url("images/blog_photo1.jpg");
-  background-position: center;
-  width: 685px;
-  height: 250px;
-  display: block;
-}
-*/
 
-/* attempting to float "categories" to the right*/
-
-ul {
-  list-style-type: none;
+/*floating Asides to the right*/
+div.asides {
+  float: right;
+  clear: right;
+  margin-top: -1260px;
+  width: 320px;
 }
 
-li {
-  color: #033048;
-  font-family: Open Sans, sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-}
+/*aside one - "Categories"*/
 .aside-one {
   margin: 10px 0px 70px 0px;
 }
 
+
+/*Categories header for aside one*/
 #categories {
   font-size: 24px;
   font-weight: lighter;
@@ -131,49 +136,25 @@ li {
   font-family: 'Arial Black';
 }
 
-p {
-  font-weight: 400;
+/*removing bullet points from "Categories list"*/
+ul {
+  list-style-type: none;
+}
+
+/*styling listed items under "Categories"*/
+li {
+  color: #033048;
+  font-family: Open Sans, sans-serif;
   font-size: 24px;
-  color: #CCCCCC;
-  margin-left: 15px;
-  /*
-  height: 80px;
-  */
+  font-weight: 500;
 }
 
-
-
-/*
-article {
-  width: 700px;
-  height: 150px;
-  margin-left: 15px;
-  float: left;
-
-}
-*/
-
-
-/*
-article.image-two {
-  background-image:  url("images/blog_photo2.jpg");
-  background-position: center;
-  width: 685px;
-  height: 250px;
-  display: block;
-}
-*/
-div.asides {
-  float: right;
-  clear: right;
-  margin-top: -1200px;
-  width: 320px;
-}
-/* attempting to float "About Relaxr to the right underneath "categories"*/
+/*Aside two - "About Relaxr"*/
 .aside-two {
   margin: 10px 0px 70px 0px;
 }
 
+/*"About Relaxr" heading for Aside two*/
 #about {
   font-size: 22px;
   font-weight: lighter;
@@ -181,6 +162,7 @@ div.asides {
   font-family: 'Arial Black';
 }
 
+/*text underneath "About Relaxr" heading on Aside two*/
 #about-text{
   color: #033048;
   font-family: Open Sans, sans-serif;
@@ -189,51 +171,28 @@ div.asides {
   margin-right: 70px;
 }
 
-
-.read-more {
-  color: #033048;
-  font-size: 24px;
-  font-weight: 400;
-  margin-right: 370px;
-  padding-left: 585px;
-  
-  
-}
-
-
-/*attempting to float "ad-unit" to the right underneath "about-relaxr"*/
+/*Ad-Unit image*/
 img.ad-unit {
   width: 200px;
   height: 500px;
-  
-
-
 }
 
-
-
-
-
-
-
+/*yellow box styling*/
 div#yellow-box {
   background: yellow;
   margin: 0 auto;
   width: 1080px;
   padding-top: 15px;
   padding-bottom: 15px;
-  
-  /*applying a clear property to prevent the rest of the div from "hiding behind" the floated boxes
-  above it*/
-
 }
 
+/*sign up now button inside yellow box*/
 .sign-up-now-box{
  
   font-size: 12px;
   font-weight: bold;
   background-color: #000099;
-  /*i felt like rounding the box out just to see what would happen - i like it*/
+  /*rounding the edges of the  sign up now box*/
   border-radius: 15px;
   width: 20%;
   height: 40px;
@@ -243,7 +202,8 @@ div#yellow-box {
   display: block;
   top: 15px;
 }
-/*styling applied to the copyright box - bottom most box*/
+
+/*styling applied to the copyright box - bottom most/black box*/
 footer.copyright{
   background-color: #121212;
   height: 200px;
@@ -252,6 +212,7 @@ footer.copyright{
 
 }
 
+/*yellow Relaxr text in footer*/
 #relaxr-two {
   font-weight: 900;
   font-size: 24px;
@@ -263,25 +224,24 @@ footer.copyright{
 
 }
 
+/*div housing Twitter and Facebook images*/
 div.images {
   margin-top: 25px;
 }
+
 /*styling applied to the Twitter logo*/
 img.twitter {
-  
   float: left;
   margin-left: 450px;
-
 }
 
-/*styling applied to the facebook logo*/
+/*styling applied to the Facebook logo*/
 img.facebook {
-  
   float: right; 
   margin-right: 450px;
 }
 
-/*styling applied to the copyright text inside the footer box - bottom most box*/
+/*styling applied to the copyright text inside the footer box - bottom most box/bottom most text*/
 p.copyright-text {
   font-weight: 600;
   font-size: 9px;
@@ -290,14 +250,3 @@ p.copyright-text {
   margin-top: 110px;
 }
 
-/*
-small {
-  opacity: 0;
-}
-*/
-
-.show-description {
-  opacity: 1;
-  width: 700px;
-  color: #606161;
-}
