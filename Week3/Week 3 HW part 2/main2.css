@@ -1,0 +1,264 @@
+{
+     -moz-box-sizing: border-box; /*Firexfox*/
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android*/
+     box-sizing: border-box; /*IE */
+}
+
+/*wrapping all elements on page*/
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  background-color: #f0efef;
+  overflow: hidden;
+  clear: both;
+}
+
+/*header color, picture and gradient*/
+header {
+  background: #033048;
+  padding: 15px 15px;
+  background-image:  url("images/header_bg.jpg"), linear-gradient(180deg, rgb(255,255,255), rgb(15,16,16));;
+  background-position: center;
+  background-color: rgba(0, 122, 204, 0.3);
+  background-blend-mode: multiply;
+}
+
+/*Relaxr title in header*/
+h1 {
+  color: white;
+  font-size: 40px;
+  font-family: Open Sans;
+  margin: 40px 30px;
+  display: inline-block;
+}
+
+/*navigation housing anchor tags*/
+div.navigation {
+  padding-left: 500px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+/*anchor tags*/
+a {
+  color: #f9e42e;
+  margin-right: 20px;
+}
+
+/*anchor tags - mouse over link*/
+a:hover {
+  color: #1AFF1A;
+}
+
+/*anchor tags - selected link*/
+a:active {
+  color: #FFFFFF;
+}
+
+/*image margin*/
+img {
+  margin-left: 15px;
+}
+
+/*Title/text over image*/
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
+  color: #033048;
+  margin-left: 15px;
+  margin-right: 350px;
+  margin-top: 35px;
+}
+
+/*floating both posts left*/
+div.posts {
+  float: left;
+
+}
+
+/*paragraph styling*/
+p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #CCCCCC;
+  margin-left: 15px;
+}
+
+/*styling applied to description text under images*/
+.show-description {
+  opacity: 1;
+  width: 700px;
+  color: #606161;
+  transition: 1s;
+}
+
+small {
+  font-size: 24px;
+  opacity: 0;
+}
+
+.show-description small {
+  opacity: 1;
+  height: 262px;
+}
+
+
+/*styling applied to the first letter of each description under each image*/
+p.show-description:first-letter {
+  color: #FF0066;
+  font-size: 45px;
+}
+
+/*"Read More" text below each image*/
+.read-more {
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
+  color: #033048;
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 370px;
+  padding-left: 575px;
+}
+
+/*horizontal line below "read more"*/
+hr {
+  margin-left: 15px;
+  margin-right: 360px;
+}
+
+/*floating Asides to the right*/
+div.asides {
+  float: right;
+  clear: right;
+  margin-top: -1580px;
+  width: 320px;
+}
+
+/*aside one - "Categories"*/
+.aside-one {
+  margin: 10px 0px 70px 0px;
+}
+
+
+/*Categories header for aside one*/
+#categories {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #033048;
+  font-family: 'Arial Black';
+}
+
+/*removing bullet points from "Categories list"*/
+ul {
+  list-style-type: none;
+}
+
+/*styling listed items under "Categories"*/
+li {
+  color: #033048;
+  font-family: Open Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/*Aside two - "About Relaxr"*/
+.aside-two {
+  margin: 10px 0px 70px 0px;
+}
+
+/*"About Relaxr" heading for Aside two*/
+#about {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #033048;
+  font-family: 'Arial Black';
+}
+
+/*text underneath "About Relaxr" heading on Aside two*/
+#about-text{
+  color: #033048;
+  font-family: Open Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 70px;
+}
+
+/*Ad-Unit image*/
+img.ad-unit {
+  width: 200px;
+  height: 500px;
+}
+
+/*yellow box styling*/
+div#yellow-box {
+  background: yellow;
+  margin: 0 auto;
+  width: 1080px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*sign up now button inside yellow box*/
+.sign-up-now-box{
+ 
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #000099;
+  /*rounding the edges of the  sign up now box*/
+  border-radius: 15px;
+  width: 20%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  display: block;
+  top: 15px;
+}
+
+/*styling applied to the copyright box - bottom most/black box*/
+footer.copyright{
+  background-color: #121212;
+  height: 200px;
+  width: 1080px;
+  margin: 0 auto;
+
+}
+
+/*yellow Relaxr text in footer*/
+#relaxr-two {
+  font-weight: 900;
+  font-size: 24px;
+  color: yellow;
+  font-family: Open Sans, sans-serif;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 500px;
+
+}
+
+/*div housing Twitter and Facebook images*/
+div.images {
+  margin-top: 25px;
+}
+
+/*styling applied to the Twitter logo*/
+img.twitter {
+  float: left;
+  margin-left: 450px;
+}
+
+/*styling applied to the Facebook logo*/
+img.facebook {
+  float: right; 
+  margin-right: 450px;
+}
+
+/*styling applied to the copyright text inside the footer box - bottom most box/bottom most text*/
+p.copyright-text {
+  font-weight: 600;
+  font-size: 9px;
+  color: white;
+  padding-left: 480px;
+  margin-top: 110px;
+}
+
