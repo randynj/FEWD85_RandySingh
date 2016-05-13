@@ -1,10 +1,20 @@
-<script>
 
+// $('read-more').on('click', function() {
+// 	$(this).toggleClass('button-display');
+// })
 
-$('div').on('click', function() {
-	$(this).toggleClass('read-more');
-})
+button = document.getElementByTagnName('button');
+read-more = document.getElementByTagnName('button-display');
 
-
-</script>
-
+function show(x) {
+	button-display[x].style.display = 'block';
+	button[x].onclick = function() {
+		hide(x);
+	}
+}
+function hide(x) {
+	button-display[x].style.display = 'none';
+	button[x].onclick = function() {
+		show(x);
+	}
+}

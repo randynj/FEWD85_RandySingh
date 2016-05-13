@@ -262,3 +262,7 @@ p.copyright-text {
   margin-top: 110px;
 }
 
+.button-display {
+  display: none;
+}
+
