@@ -19,3 +19,5 @@ IF user gets answer correct, the question goes away and a "sub-page" displays co
 ELSE user gets answer wrong, text display that the user has incorrect answer:
      - button to prompt user to try that question again OR
      - button to prompt the user to start the quiz from the very beginning
+
+This process will repeat for all questions at which, at the conclusion of the quiz the user will get their grade (on a separate page) and have choices (buttons) to take the quiz again or view the solution answers to the quiz
