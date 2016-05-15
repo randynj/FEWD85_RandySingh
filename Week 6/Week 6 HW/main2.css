@@ -100,14 +100,14 @@ p {
   transition: 1s;
   */
 }
-
+/*text hidden in div post-one until user click "Read More"*/
 #hidden-text-one {
   display: none;
   opacity: 1;
   width: 700px;
   color: #606161;
 }
-
+/*text hidden in div post-two until user click "Read More"*/
 #hidden-text-two {
   display: none;
   opacity: 1;
@@ -115,25 +115,13 @@ p {
   color: #606161;
 }
 
-/*
-small {
-  font-size: 24px;
-  opacity: 0;
-}
-
-.show-description small {
-  opacity: 1;
-  height: 262px;
-}
-*/
-
 /*styling applied to the first letter of each description under each image*/
 p.show-description:first-letter {
   color: #FF0066;
   font-size: 45px;
 }
 
-/*"Read More" text below each image*/
+/*"Read More"*/
 #read-more-one {
   font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
   color: #033048;
@@ -143,7 +131,7 @@ p.show-description:first-letter {
   padding-left: 575px;
   cursor: pointer;
 }
-
+/*"Read More" text*/
 #read-more-two {
   font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
   color: #033048;
@@ -217,7 +205,8 @@ li {
   margin-right: 70px;
 }
 
-a.learnmore {
+/*Learn More text in aside-two*/
+p.learnmore {
   color: #033048;
   font-family: Open Sans, sans-serif;
   font-size: 24px;
@@ -225,6 +214,7 @@ a.learnmore {
   cursor: pointer;
 }
 
+/*text that will display once user click on "Learn More"*/
 p#learnmoretext {
     display: none;
     color: #033048;
