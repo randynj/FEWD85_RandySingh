@@ -73,15 +73,16 @@ h2 {
   font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
   color: #033048;
   margin-left: 15px;
-  margin-right: 350px;
   margin-top: 35px;
 }
 
-/*floating both posts left*/
+/*setting POSTS div to inline-block and width as to not interfere with the Asides div*/
 div.posts {
-  float: left;
-
+  /*float: left;*/
+  width: 700px;
+  display: inline-block;
 }
+
 
 /*paragraph styling*/
 p {
@@ -96,18 +97,15 @@ p {
   opacity: 1;
   width: 700px;
   color: #606161;
-  /*
-  transition: 1s;
-  */
 }
-/*text hidden in div post-one until user click "Read More"*/
+
 #hidden-text-one {
   display: none;
   opacity: 1;
   width: 700px;
   color: #606161;
 }
-/*text hidden in div post-two until user click "Read More"*/
+
 #hidden-text-two {
   display: none;
   opacity: 1;
@@ -121,39 +119,36 @@ p.show-description:first-letter {
   font-size: 45px;
 }
 
-/*"Read More"*/
+/*"Read More" text below each image*/
 #read-more-one {
   font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
   color: #033048;
   font-size: 24px;
   font-weight: 500;
-  margin-right: 370px;
-  padding-left: 575px;
+  margin-left: 575px;
   cursor: pointer;
 }
-/*"Read More" text*/
+
 #read-more-two {
   font-family: Optima,Segoe,Segoe UI,Candara,Calibri; 
   color: #033048;
   font-size: 24px;
   font-weight: 500;
-  margin-right: 370px;
-  padding-left: 575px;
+  margin-left: 575px;
   cursor: pointer;
 }
 
 /*horizontal line below "read more"*/
 hr {
   margin-left: 15px;
-  margin-right: 360px;
 }
 
 /*floating Asides to the right*/
 div.asides {
   float: right;
-  clear: right;
-  margin-top: -1240px;
-  width: 320px;
+  padding-top: 15px;
+  /*display: inline-block;*/
+  width: 25%;
 }
 
 /*aside one - "Categories"*/
@@ -205,8 +200,8 @@ li {
   margin-right: 70px;
 }
 
-/*Learn More text in aside-two*/
-p.learnmore {
+/*"Learn More" text within Aside 2*/
+a.learnmore {
   color: #033048;
   font-family: Open Sans, sans-serif;
   font-size: 24px;
@@ -214,7 +209,7 @@ p.learnmore {
   cursor: pointer;
 }
 
-/*text that will display once user click on "Learn More"*/
+/*text displayed once "Learn More" is clicked*/
 p#learnmoretext {
     display: none;
     color: #033048;
