@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>
+    Relaxr Registration Form
+  </title>
+  
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,800,400italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="form.css">
+
+<script type='text/javascript' src="form2.js"></script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<main class="wrapper">
+
+<form id="example-form" method="post" action="index2.html">
+<!-- what is the method and action classes for? -->
+
+  <p></p>
+  <span class="username">Enter Your Name/UserName</span>
+  <p></p>
+  <input class="username" type="text" name="uname" placeholder="Username">
+  <p></p>
+  
+  <!-- special tag for textarea input -->
+  <div>Tell Us Why You're Interested In Joining Relaxr</div>
+  <p></p>
+  <textarea name="ex_ta" cols="40" rows="5"></textarea>
+  <p></p>
+  
+  <div>Create A Password</div>
+  <p></p>
+  <input class="password" type="password" name="ex_pw" placeholder="Password">
+  <p></p>
+  
+  <div>Do You Like What Relaxr Has To Offer So Far?</div>
+    <input type="checkbox" name="ex_cb" value="opt1"><span class="option">Yes</span>
+    <p></p>
+    <input name="ex_cb" type="checkbox" value="opt2"><span class="option">No</span>
+    <p></p>
+    <input name="ex_cb" type="checkbox" value="opt3"><span class="option">Undecided</span>
+    <p></p>
+    
+
+    <div id="error-message"></div>
+  
+
+    <input class="submit" type="submit" value="SUBMIT"><br><br>
+  
+  
+</form>
+</main>
+
+
+</body>
+
+</html>
+
+

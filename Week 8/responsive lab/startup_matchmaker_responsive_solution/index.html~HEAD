@@ -3,31 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<title>Startup Matchmaker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="https://use.fontawesome.com/218b719c95.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
 </head>
 <body>
 	<header id="page-header">
 		<div class="wrapper">
 			<h1><a href="index.html">Startup Matchmaker</a></h1>
-
-			<i class="fa fa-bars" aria-hidden="true"></i>
-
 			<nav>
 				<ul>
-					<li><strong><a href="developers.html">Developers</a></strong></li>
-					<li><strong><a href="designers.html">Designers</a></strong></li>			
+					<li><div class="line"></div><div class="line"></div><div class="line"></div></li>
+					<li><strong><a href="developers.html">Find Developers</a></strong></li>
+					<li><strong><a href="designers.html">Find Designers</a></strong></li>			
 					<li><a href="how.html">How it Works</a></li>			
 					<li><a href="team.html">Our Team</a></li>			
 					<li><a href="blog.html">Blog</a></li>			
 				</ul>
 			</nav>
-
 		</div>
 	</header>
 	<p class="tagline">Because two brains <del>taste</del> <ins>are</ins> better than&nbsp;one.</p>
@@ -35,7 +29,8 @@
 		<div class="wrapper">
 			<div class="blurb">
 				<h2>Meet your Match!</h2>
-				<p>Have a great idea for a product, but need help making it a reality? We’re here to help. Startup Matchmaker is the best place for designers and developers to find each other.</p>
+				<p>Have a great idea for a product, but need help making it a reality? We’re here to help.</p>
+				<p>Startup Matchmaker is the best place for designers and developers to find each other.</p>
 				<a class="button" href="#">Create a Profile</a>
 			</div>
 		</div>
@@ -54,14 +49,14 @@
 					<h3>Find a Developer</h3>
 				</header>
 				<p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
-				<a class="button" href="developers.html">Start Your Search</a>
+				<a class="button" href="#">Start Your Search</a>
 			</section>
 			<section class="tout">
 				<header>
 					<h3>Find a Designer</h3>
 				</header>
 				<p>Need someone who can make a product intuitive and appealing? Get ready.</p>
-				<a class="button" href="designers.html">Start Your Search</a>
+				<a class="button" href="#">Start Your Search</a>
 			</section>
 		</section>
 	</div>
@@ -70,8 +65,6 @@
 			© 2013 Startup Matchmaker. Made in NY.
 		</div>
 	</footer>
-
-	<script src="startup.js"></script>
-
+	<script src="js/main.js"></script>
 </body>
 </html>

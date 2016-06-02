@@ -9,7 +9,14 @@ body {
 	max-width: 1280px;
 	margin: auto;
 }
-
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
 h1 {
 	font-size: 2em;
 	line-height: 1;
@@ -26,7 +33,16 @@ h3 {
 p {
 	margin: 0 0 1.5em 0;
 }
-
+nav .line{
+	width: 3em;
+	height: .3em;
+	background: yellow;
+	border-radius: 1em;
+	margin-top: .25em;
+}
+nav .line:first-of-type{
+	margin-top:.7em;
+}
 .button {
 	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
@@ -62,25 +78,21 @@ p {
 }
 #page-header nav {
 	float: right;
-	
 }
-
-.fa.fa-bars {
-	display: none;
-}
-
 #page-header nav li {
 	float: left;
 }
+#page-header nav li:first-child{
+	float:right;
+	display: none;
+	cursor: pointer;
+}
 #page-header nav a {
 	display: block;
-	padding: 20px 15px;
+	padding: 20px 10px;
 }
 #page-header nav li a:hover {
 	color: yellow;
-}
-#page-header nav li.active a {
-	background: #666;
 }
 #page-header nav strong {
 	font-family: 'Oswald', sans-serif;
@@ -124,8 +136,11 @@ p {
 	padding: 4%;
 	float: right;
 	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	transition: width 500ms;
 }
-
+.blurb > p:first-of-type{
+	margin-bottom:0;
+}
 .touts {
 	background: #EEE;
 	background: white;
@@ -145,47 +160,6 @@ p {
 	background: #C6C6C6;
 }
 
-.profiles {
-	background: #C6C6C6;
-	padding: 10px;
-}
-.cards {
-	overflow: hidden;
-}
-.card {
-	float: left;
-	width: 25%;
-}
-.card img {
-	max-width: 100%;
-}
-.card article {
-	background: white;
-	margin: 10px;
-	padding: 10px;
-}
-.card .button {
-	font-size: .75em;
-}
-
-.tags {
-	overflow: hidden;
-	margin-bottom: 10px;
-}
-.tags li {
-	float: left;
-}
-.tags li a {
-	display: block;
-	background: #666;
-	padding: 1px 12px;
-	border-radius: 100px;
-	font-size: .75em;
-	margin: 0 5px 5px 0;
-	color: white;
-	text-decoration: none;
-}
-
 footer {
 	background: black;
 	color: white;
@@ -194,20 +168,55 @@ footer {
 
 
 
-/*iPhone 5 mobile style*/
-/* Portrait */
-@media screen and (min-width: 320px){
+/*MEDIA QUERY STLYES*/
 
-.fa-bars {
-	float: right;
-	color: red;
-	font-size: 30px;
+
+@media screen and (max-width:1080px) and (min-width: 980px){
+	nav{
+
+		font-size: 18px;
+	}
 }
-
-
-
-
+@media screen and (max-width:980px) and (min-width: 768px){
+	nav{
+		font-size: 12px;
+	}
 }
+@media screen and (max-width: 768px){
+	body{
+		font-size: 16px;
+	}
+	nav{
+		width:100%;
+	}
+	.tagline,.blurb > p:first-of-type{
+		display: none;
+	}
+	.blurb{
+		width:60%;
+	}
+	.tout{
+		width:94%;
+		box-shadow: none;
+	}
+	#page-header nav li{
+		float: none;
+	}
+	#page-header nav li:first-child{
+		display:block;
+		position: absolute;
+		top:.25em;
+		right:.5em;
+	}
+	ul{
 
-
-
+		/*instead of having it slidedown and pushing the div below it, we can probably
+		use z-index to slideDown above the div */
+		height:0;
+		transition:height 1s;
+		overflow: hidden;
+	}
+}
+.slideDown{
+	height:20em;
+}
