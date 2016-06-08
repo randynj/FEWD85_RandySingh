@@ -1,23 +1,36 @@
-Simple 5 question multiple choice quiz of the 90s. 
+10 question multiple choice quiz of the 90s. 
 
-Main body -a colorful collage of images (not sure what yet)
-               - text: This is a quiz about the 90's
-               - Begin button in middle (will lead to first question page)
+Main Body:
+  - colorful horizontal cylinder spanning length of page
+  - black background with Particles.JS in the foreground
 
-(Background music is a possibility - HTML audio tag)
+First Page:
+  - introduction page stating the preceding quiz
+  - link to second page (actual quiz)
 
-1st Question page: 
-- will contain same collage of images from main body (throughout the entire quiz)
-- state the question in middle of screen (with a PNG image or GIF that displays on top of each question)
-- 4 multiple choice buttons as answers to questions (as user hovers over each button, the button will change color)
-- submit button that user can click on for the answer
- (user has to choose the answer button of choice and THEN click submit button to submit answer)
+Second Page (question page)
+  - quiz content
+  - question count with question total
+  - score keeper
+  - question
+  - 4 buttons as answer options
+  - once player answers, wrong answer and right answer will be highlighted with explanation of answer
+     - 4 multiple choice buttons as answers to questions (as user hovers over each button, the button will change color)
+
+
+If user gets answer right:
+  - player answer choice is highlighted in green and explanation displays below
+  - score keeper increases by one (indicating user got answer correct and to tally that to the score total)
+
+ELSE user gets answer wrong:
+  - player answer choice is highlighted in red and correct answer is highlighted in green with explantion displaying below
+  - score keeper does not increase to indicate player selected the wrong answer
   
-IF user gets answer correct, the question goes away and a "sub-page" displays confirming they got the answer correct (correct image gif)
-     - underneath the "correct image gif"
-
-ELSE user gets answer wrong, text display that the user has incorrect answer:
-     - button to prompt user to try that question again OR
-     - button to prompt the user to start the quiz from the very beginning
-
-This process will repeat for all questions at which, at the conclusion of the quiz the user will get their grade (on a separate page) and have choices (buttons) to take the quiz again or view the solution answers to the quiz
+Player clicks "Next Question" at bottom of page at the end of each question (after they have attempted an asnswer)
+  - question counter increases by one to indicate to the player that they are progressing through the quiz (10 question total)
+     
+Once user has answered all 10 questions, result page displays:
+  - Final numerical Score displays
+  - depending on what score is user gets specific text and GIF displayed
+  - player has option to repeat the quiz from the beginning ("play again" button)
+  
