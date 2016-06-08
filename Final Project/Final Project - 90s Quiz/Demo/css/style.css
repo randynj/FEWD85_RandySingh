@@ -1,0 +1,479 @@
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */}
+
+.cf:after {
+    clear: both;
+}
+
+/*black background color*/
+body {
+  background: #000000;
+}
+
+/*partciles being displayed*/
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*setting height and width of the quiz*/
+#wrapper {
+  position: absolute;
+  z-index: 2;
+  min-width: 1890px;
+  height: 100%;
+}
+
+/*heading spanning the width of the page*/
+.header {
+  padding-bottom: 130px;
+  background-color: #FFFFFF;
+  /*z-index: 50;*/
+  overflow: hidden;
+  border-radius: 300px;
+  background-image: url("../images/90.png");
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+/*all H1 elements styling*/
+h1 {
+  color: white;
+  opacity: .5;
+  font-family: Titillium, Arial, sans-serif;
+  margin-left: 500px;
+}
+
+
+/*housing background for quiz*/
+.group-pad {
+  position: absolute;
+  top: 15%
+  right: 0px;
+  left: 0px;
+}
+
+/*housing questions*/
+section {
+  position: absolute;
+  width: 1080px;
+  top: 10%;
+  margin: 0 auto;
+  left: 20%;
+  right: 20%;
+  /*background: blue;*/
+  background-color: #FFFFFF;
+  border-radius: 70px;
+  /*height: 750px;*/
+  background-image: url("../images/BACKGROUND_copy.png");
+  background-position: center;
+  background-blend-mode: multiply;
+  
+
+}
+
+/*styling for all H2 elements*/
+h2 {
+    font-family: 'BebasNeueBold', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 45px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+/*styling for all buttons*/
+button {
+    display: block;
+    border-radius: 10px;
+    margin: 20px auto;
+    /*font-family: 'BebasNeueBold', sans-serif;*/
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;  
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+/*Lets Get Jiggy Wit It button on index.html page styling*/
+  #start {
+    height: 58px;
+    background-color: #F28321;
+    font-size: 200%;
+    padding: 5px 35px;
+    font-weight: 600;
+    font-family: 'Poiret One', cursive;
+}
+
+/*hover for Lets Get Jiggy Wit It button*/
+#start:hover {
+    background-color: #FF5A00;
+}
+
+/*link text for Lets Get Jiggy Wit It button*/
+#start a {
+    color: #fff;
+}
+
+/*background image and styling for questions*/
+.main-container {
+    background-color: #999999;
+    border-radius: 0 0 15px 15px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+    box-shadow: 0 0 100px #101010;
+    background-image: url("../images/BACKGROUND_copy.png");
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+styling all the elements in the div above the questions
+.top-panel {
+    width: 70%;
+    margin: auto;
+    }
+
+
+/*styling the question player is on and total number of questions*/
+.question-info {
+    float: left;
+    width: 9%;
+    font-size: 250%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*styling the number question player is on*/
+#question-count {
+    font-family: 'KlinicSlabBold';
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+/*stlying the total number question*/
+#question-total {
+    font-family: 'KlinicSlabBook';
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -12px;
+    width: 100%;
+    color: white;
+}
+
+/*stlying all Paragraph tags*/
+p {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+/*
+.icon-sm {
+    padding-top: 15px;
+    width: 80%;
+    float: left;
+}
+
+.icon-sm-circle {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 70px;
+    background-color: #0062AF;
+}
+
+.icon-sm img {
+    width: 90px;
+    height: 90px;
+}
+*/
+
+/*image on every question page*/
+.icon img {
+    margin-left: 380px;
+    margin-top: 70px;
+}
+
+/*stlying score div for player*/
+#score-info {
+    float: right;
+    width: 10%;
+    text-align: center;
+    padding-top: 45px;
+    font-size: 35px;
+    color: white;
+}
+
+/*Score text on each question page*/
+#score-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#score {
+    font-size: 280%;
+    font-family: 'KlinicSlabBold', sans-serif;
+    color: white;
+    position: relative;
+    top: -10px;
+}
+
+/*styling of question text*/
+#question {
+    color: #FFFFFF;
+    /*padding: 15px 0px;*/
+    padding: 30px 0px 7px 0px;
+    font-weight: 400;
+}
+
+/*housing the buttons for answer choices*/
+.answer-container {
+    width: 100%;
+    padding-top: 40px;
+}
+
+/*buttons for answer choices*/
+.option { 
+    /*float: left;*/
+    /*line-height: 1;*/
+    /*margin: 9px;*/
+    color: black;
+    border-radius: 10px;
+    height: 58px;
+    width: 75%;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+/*styling for hover over the answer buttons*/
+.option:hover {
+    background-color: #FF8000;
+}
+
+/*answer block for when user chooses an answer*/
+#ans-info {
+    padding: 10px 30px;
+    clear: both;
+    display: none;
+    width: 80%;
+    margin: auto;
+}
+/*Sorry or Correct Message*/
+#result-message {
+    padding-top: 30px;
+    font-family: 'KlinicSlabMediumIt', sans-serif;
+    font-weight: 500;
+    font-size: 240%;
+    line-height: 2;
+    color: #FFFFFF;
+}
+
+/*explanation of answer*/
+#explanation {
+    padding: 20px 0px;
+}
+
+/*next question button*/
+.advance {
+        float: right;
+    /* border-radius: 10px; */
+    /* margin-top: 0; */
+    line-height: 1;
+    height: 50px;
+    width: 45%;
+    background-color: #00CCFF;
+    font-size: 150%;
+    font-weight: 600;
+    padding: 5px 10px;
+    /* color: white; */
+    letter-spacing: 2px;
+}
+/*next question hover color*/
+.advance:hover {
+    background-color: #FF471A;
+}
+
+/*Next question styling*/
+.advance {
+    float: none;
+    width: 40%;
+    height: 70px;
+}
+
+/*styling for end/result page following conclusion of quiz*/
+#end-page {
+    display: none;
+    padding: 0 50px;
+}
+
+/*normal stlying for answer buttons*/
+.normal {
+    background-color: #FFFFFF;
+}
+
+/*correct answer styling for answer buttons*/
+.correct {
+    background-color: #3DBE35;
+}
+
+/*correct answer styling for answer buttons*/
+.correct:hover {
+    background-color: #3DBE35;
+}
+
+/*incorrect answer styling for answer buttons*/
+.incorrect {
+    background-color: red;
+}
+
+/*incorrect answer styling for answer buttons*/
+.incorrect:hover {
+    background-color: red;
+}
+
+/*styling for div housing image on question page*/
+.icon-sm {
+    padding-top: 15px;
+    width: 80%;
+    float: left;
+}
+
+/*giving styling to image on question page*/
+.icon-sm-circle {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 70px;
+    background-color: #E63503;
+}
+
+.icon-sm img {
+    width: 90px;
+    height: 90px;
+}
+
+/*final score styling*/
+.end-score {
+    text-align: center;
+    line-height: 2;
+}
+
+/*Lets See What You Got styling on final score page*/
+.end-message {  
+    font-size: 280%;
+    font-weight: 700;
+    font-family: 'KlinicSlabMediumIt', sans-serif;
+   /*color: #0064AD;*/
+    color: #FFFFFF;
+    /*padding: 35px 0 10px 0;*/
+}
+
+/*message accosiated with final score*/
+.score-message {
+    font-family: 'KlinicSlabMedium', sans-serif;
+    text-transform: uppercase;
+    /*color: #0064AD;*/
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+/*font size for numerical final score*/
+  .score-text {
+    font-size: 200%;
+}
+
+
+.score-message .score {
+    font-size: 750%;
+    display: inline-block;
+    padding: 4px 0 12px 0;
+}
+
+/*styling for "prize" GIF*/
+.prize-container {
+    border-top: 2.5px solid #A8A8A8;
+    padding-top: 17px;
+    /* position: relative; */
+    /* top: -15px; */
+    }
+/*
+.prize-msg-container {
+    float: left;
+}
+
+.prize-msg {
+    font-family: 'KlinicSlabBoldIt', sans-serif;
+    line-height: 1.1;
+    font-size: 190%;
+    color: #FF5A00;
+    display: inline-block;
+}
+*/
+
+/*Text associated with final prize*/
+#prize {
+    font-family: 'Poiret One', cursive;
+    line-height: 1;
+    color: white;
+    display: inline-block;
+    font-size: 293%;
+    padding-bottom: 20px;
+}
+/*
+.prize-msg-text {
+    color: #FFFFFF;
+    clear: both;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+
+.again {
+    float: right;
+    /*width: 33%;*/
+}
+
+/*.again-text {
+    /*font-family: 'KlinicSlabBookIt';*/
+    /*font-size: 110%;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #0064AD;
+}
+*/
+
+/*styling for play again button */
+#playAgain {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*styling for play again text*/
+#playAgain a {
+    color: #A6A6A6;
+    text-decoration: none;
+}
+
+/*styling for all anchor tags*/
+a {
+    text-decoration: none;
+}

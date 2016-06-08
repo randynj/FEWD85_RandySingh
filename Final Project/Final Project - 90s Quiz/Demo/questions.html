@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+ 
+  <title>Guess the 90's</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!--
+  <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
+  -->
+
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <!--particles script tags-->
+  <script type='text/javascript' src='../jquery.particleground.js'></script>
+
+  <script type='text/javascript' src='js/demo.js'></script>
+
+  <script type='text/javascript' src="js/particles.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  
+  <div class="header">
+
+    <div class="group-pad">
+
+  <h1></h1>
+
+  </div> <!--close group-pad-->
+
+</div><!--close header-->
+
+<section>
+
+<div class="main-container">
+
+            <div id="question-page">
+
+
+            <div class="top-panel">
+            
+                <div class="top-info cf"> <!-- holds all top information -->
+  
+                
+
+                    <div class="question-info"> <!-- holds both question number components -->
+
+                    <!--keeps count of what question number player is on-->
+                        <div id="question-count"></div>
+
+                        <hr>
+
+                        <!--Total number of questions-->
+                        <div id="question-total">10</div>
+
+                    </div>
+                    
+                    <!--Image on questions page-->
+                    <div class="icon-sm">
+                        <div class="icon-sm-circle">
+
+                            <img src="images/90.png"/>
+
+                        </div>
+                    </div>
+                    <!--Score count for player-->       
+                    <div id="score-info">
+                        <div id="score-text">Score:</div>
+
+                        <!--actual numerical score for player-->
+                        <div class="score"></div>
+                    </div>
+                </div>
+                
+                <!--div housing questions and answers-->
+
+                <!--question-->
+                <div id="question">
+                    <p></p>
+                </div>
+                <!--answer choices-->
+                <div class="answer-container">
+                    <button class="option normal"></button>
+                    <button class="option normal"></button>
+                    <button class="option normal"></button>
+                    <button class="option normal"></button>
+                </div>
+
+            </div> <!-- top-panel -->
+                
+                <!--reveals correct answer and explanation-->
+                <div id="ans-info">
+                    <div id="result-message"></div>
+                    <div id="explanation">
+                        <p></p>
+                    </div>
+                
+                    <!--next question button-->
+                    <div class="options2 clearfix">
+                        <button class="advance" id="next">Next Question</button>
+
+                    </div>
+</div>
+                    </div>
+
+
+                <div id="end-page">
+                
+                <!--End of the quiz, Score page-->       
+                <div class="end-score">
+                    <div class="end-message">Let's See What You Got</div>
+                    <div class="score-message">
+                        <div class="score-text">Your score:</div>
+
+                        <!--reveals players score-->
+                        <div class="score"></div>
+                    </div>
+ 
+                </div>
+                    
+                <!--gives player feedback of results with GIF and additional text-->   
+                <div class="prize-container">
+                    <div class="prize-msg-container">
+                        <div class="prize-msg"> </div>
+                        
+                        <div id="prize-icon"><img src=""></div>
+
+                        <div id="prize"></div>
+                    </div>
+                    <div class="prize-msg-text"></div>
+                </div>
+                        
+                <div class="options2">
+                    <div class="again">
+                    
+                    <!--play again button-->
+                    <a href="questions.html"><button class="advance" id="playAgain">Play Again</button></a>
+
+                    </div>
+                </div>
+
+                </div>
+                
+    </div> 
+
+
+</section>
+
+
+<div id="particles">
+</div> <!--close particles-->
+
+</div> <!--close wrapper-->
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+
+<script src="js/maintwo.js"></script>
+
+
+</body>
+</html>
