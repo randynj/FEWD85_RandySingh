@@ -1,4 +1,6 @@
-10 question multiple choice quiz of the 90s. 
+Final Project - 90's Quiz:
+
+  - 10 question multiple choice quiz of the 90s. 
 
 Main Body:
   - colorful horizontal cylinder spanning length of page
