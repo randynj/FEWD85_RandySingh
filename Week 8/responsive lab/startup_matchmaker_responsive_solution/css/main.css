@@ -171,17 +171,24 @@ footer {
 /*MEDIA QUERY STLYES*/
 
 
+/*media below will take place between these set dimensions*/
 @media screen and (max-width:1080px) and (min-width: 980px){
 	nav{
 
 		font-size: 18px;
 	}
 }
+
+
+/*media below will take place between these set dimensions*/
 @media screen and (max-width:980px) and (min-width: 768px){
 	nav{
 		font-size: 12px;
 	}
 }
+
+
+/*media below will take place once browser reaches width 768 and below*/
 @media screen and (max-width: 768px){
 	body{
 		font-size: 16px;
@@ -189,25 +196,40 @@ footer {
 	nav{
 		width:100%;
 	}
+
+/*once width reaches 768 width, the  text "Because two brains are better than one" will
+	not display
+	AND the first paragraph under the "Meet Your Match" box, will not display (thats what the 
+	p:first-of-type is for)*/
 	.tagline,.blurb > p:first-of-type{
 		display: none;
 	}
+
+	/*the "Meet Your Match" box will reduce to 60% size*/
 	.blurb{
 		width:60%;
 	}
+
+	/*the three sections will now only occupy 94% width of the page at these browser dimensions*/
 	.tout{
 		width:94%;
 		box-shadow: none;
 	}
+
+	
 	#page-header nav li{
 		float: none;
 	}
+
+	/*styling for the hamburger menu*/
 	#page-header nav li:first-child{
 		display:block;
 		position: absolute;
 		top:.25em;
 		right:.5em;
 	}
+
+
 	ul{
 
 		/*instead of having it slidedown and pushing the div below it, we can probably
@@ -215,6 +237,8 @@ footer {
 		height:0;
 		transition:height 1s;
 		overflow: hidden;
+		
+		/*z-index: 1;*/
 	}
 }
 .slideDown{

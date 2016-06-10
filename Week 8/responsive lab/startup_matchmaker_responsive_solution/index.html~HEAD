@@ -14,7 +14,11 @@
 			<h1><a href="index.html">Startup Matchmaker</a></h1>
 			<nav>
 				<ul>
+					
+					<!--this line is the html for the hamburger menu which displays in the media query when the width is 768 or less-->
 					<li><div class="line"></div><div class="line"></div><div class="line"></div></li>
+
+
 					<li><strong><a href="developers.html">Find Developers</a></strong></li>
 					<li><strong><a href="designers.html">Find Designers</a></strong></li>			
 					<li><a href="how.html">How it Works</a></li>			
